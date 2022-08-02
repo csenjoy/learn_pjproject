@@ -1,0 +1,26 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'f:/learn/opensource/av/pjproject-2.8'
+ 
+Makefile:2: build/host-.mak: No such file or directory
+make.exe: *** No rule to make target 'build/host-.mak'.
+
+Makefile:1: build.mak: No such file or directory
+make.exe: *** No rule to make target 'build.mak'.
+
+make.exe: Failed to remake makefile 'build/host-.mak'.
+make.exe: Failed to remake makefile 'build.mak'.
+
+for dir in pjlib/build pjlib-util/build pjnath/build third_party/build pjmedia/build pjsip/build pjsip-apps/build ; do \
+	if make.exe  -C $dir all; then \
+	    true; \
+	else \
+	    exit 1; \
+	fi; \
+done
+ 
+��ʱ��Ӧ�� dir��
+
+make.exe: *** [Makefile:14: all] Error 255
+
+make.exe: Leaving directory 'f:/learn/opensource/av/pjproject-2.8'
+ 

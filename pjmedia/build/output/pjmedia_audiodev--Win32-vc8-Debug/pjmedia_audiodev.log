@@ -1,0 +1,12 @@
+﻿  audiodev.c
+  audiotest.c
+  bdimad_dev.c
+  errno.c
+  legacy_dev.c
+  null_dev.c
+  pa_dev.c
+  wmme_dev.c
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\pjmedia\build\.\output\pjmedia_audiodev--Win32-vc8-Debug\pjmedia_audiodev.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\pjmedia\lib\pjmedia-audiodev-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pjmedia_audiodev) does not match the Library's OutputFile property value (pjmedia-audiodev-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  pjmedia_audiodev.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjmedia\build\.\output\pjmedia_audiodev--Win32-vc8-Debug\pjmedia_audiodev.lib

@@ -1,0 +1,10 @@
+avcodec.lib
+avdevice.lib
+avfilter.lib
+avformat.lib
+avutil.lib
+dumpname.bat
+postproc.lib
+swresample.lib
+swscale.lib
+tmp.txt

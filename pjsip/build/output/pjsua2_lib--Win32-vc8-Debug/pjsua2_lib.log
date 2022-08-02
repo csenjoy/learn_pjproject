@@ -1,0 +1,22 @@
+﻿  account.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  call.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  endpoint.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  json.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  media.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  persistent.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  presence.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  siptypes.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  types.cpp
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\pjsip\build\.\output\pjsua2_lib--Win32-vc8-Debug\pjsua2_lib.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\pjsip\lib\pjsua2-lib-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pjsua2_lib) does not match the Library's OutputFile property value (pjsua2-lib-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  pjsua2_lib.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjsip\build\.\output\pjsua2_lib--Win32-vc8-Debug\pjsua2_lib.lib

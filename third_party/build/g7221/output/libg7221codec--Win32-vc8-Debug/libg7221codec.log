@@ -1,0 +1,44 @@
+﻿  basic_op.c
+  common.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\common.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_tab.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  huff_tab.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_tab.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  tables.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  coef2sam.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\decode\coef2sam.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  dct4_s.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\decode\dct4_s.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\decode\dct4_s.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  decoder.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\decode\decoder.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  dct4_a.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\encode\dct4_a.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\encode\dct4_a.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  encoder.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\encode\encoder.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\huff_def.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  sam2coef.c
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\encode\sam2coef.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\defs.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\third_party\g7221\common\tables.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\third_party\build\g7221\.\output\libg7221codec--Win32-vc8-Debug\libg7221codec.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\third_party\lib\libg7221codec-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(libg7221codec) does not match the Library's OutputFile property value (libg7221codec-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libg7221codec.vcxproj -> F:\learn\opensource\av\pjproject-2.8\third_party\build\g7221\.\output\libg7221codec--Win32-vc8-Debug\libg7221codec.lib

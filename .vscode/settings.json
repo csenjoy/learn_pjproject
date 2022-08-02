@@ -1,0 +1,26 @@
+{
+  "files.associations": {
+    "pjsua_app_common.h": "c",
+    "chrono": "c",
+    "xlocale": "c",
+    "ioqueue_common_abs.h": "c",
+    "audiodev.h": "c",
+    "avi.h": "c",
+    "fstream": "cpp",
+    "vid_toolbox.h": "c",
+    "videodev.h": "c",
+    "iterator": "c",
+    "memory": "c",
+    "random": "c",
+    "xutility": "c",
+    "system_error": "c",
+    "functional": "c",
+    "pool.h": "c",
+    "pool_alt.h": "c",
+    "ioqueue.h": "c",
+    "vid_stream.h": "c",
+    "vid_codec.h": "c"
+  },
+  "bookmarks.saveBookmarksInProject": true,
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
+}

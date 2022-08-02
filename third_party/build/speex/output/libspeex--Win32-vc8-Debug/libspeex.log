@@ -1,0 +1,32 @@
+﻿  bits.c
+  cb_search.c
+  fftwrap.c
+  filterbank.c
+  filters.c
+  kiss_fft.c
+  kiss_fftr.c
+  lpc.c
+  lsp.c
+  ltp.c
+  mdf.c
+  modes.c
+  modes_wb.c
+  nb_celp.c
+  preprocess.c
+  quant_lsp.c
+  resample.c
+  sb_celp.c
+  smallft.c
+  speex.c
+  正在生成代码...
+  正在编译...
+  speex_callbacks.c
+  speex_header.c
+  stereo.c
+  vbr.c
+  vq.c
+  window.c
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\third_party\build\speex\.\output\libspeex--Win32-vc8-Debug\libspeex.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\third_party\lib\libspeex-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(libspeex) does not match the Library's OutputFile property value (libspeex-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libspeex.vcxproj -> F:\learn\opensource\av\pjproject-2.8\third_party\build\speex\.\output\libspeex--Win32-vc8-Debug\libspeex.lib

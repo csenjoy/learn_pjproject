@@ -1,0 +1,10 @@
+﻿  sip_100rel.c
+  sip_inv.c
+  sip_replaces.c
+f:\learn\opensource\av\pjproject-2.8\pjsip\src\pjsip-ua\sip_replaces.c(167): warning C4102: “TODO___provide_initialized_flag_for_each_endpoint”: 未引用的标签
+  sip_timer.c
+f:\learn\opensource\av\pjproject-2.8\pjsip\src\pjsip-ua\sip_timer.c(547): warning C4102: “TODO___provide_initialized_flag_for_each_endpoint”: 未引用的标签
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\pjsip\build\.\output\pjsip_ua--Win32-vc8-Debug\pjsip_ua.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\pjsip\lib\pjsip-ua-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pjsip_ua) does not match the Library's OutputFile property value (pjsip-ua-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  pjsip_ua.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjsip\build\.\output\pjsip_ua--Win32-vc8-Debug\pjsip_ua.lib

@@ -1,0 +1,19 @@
+﻿  main.c
+f:\learn\opensource\av\pjproject-2.8\pjsip-apps\src\pjsua\pjsua_app.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pjsua_app.c
+f:\learn\opensource\av\pjproject-2.8\pjsip-apps\src\pjsua\pjsua_app.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pjsua_app_cli.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pjsua_app_common.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pjsua_app_config.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  pjsua_app_legacy.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\pjsip-apps\build\.\output\pjsua--Win32-vc8-Debug\pjsua.exe) does not match the Linker's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\pjsip-apps\bin\pjsua-i386-Win32-vc8-Debug.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(pjsua) does not match the Linker's OutputFile property value (pjsua-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+main.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  pjsua.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjsip-apps\build\.\output\pjsua--Win32-vc8-Debug\pjsua.exe

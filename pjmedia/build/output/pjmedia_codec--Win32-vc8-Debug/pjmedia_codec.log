@@ -1,0 +1,28 @@
+﻿  amr_sdp_match.c
+  audio_codecs.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ffmpeg_vid_codecs.c
+f:\learn\opensource\av\pjproject-2.8\third_party\ffmpeg\include\libavutil\rational.h(73): warning C4204: 使用了非标准扩展 : 非常量聚合初始值设定项
+f:\learn\opensource\av\pjproject-2.8\third_party\ffmpeg\include\libavutil\rational.h(161): warning C4204: 使用了非标准扩展 : 非常量聚合初始值设定项
+  g722.c
+  g7221.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  g7221_sdp_match.c
+  g722_dec.c
+  g722_enc.c
+  gsm.c
+  h263_packetizer.c
+  h264_packetizer.c
+  ilbc.c
+  ipp_codecs.c
+  l16.c
+  opencore_amr.c
+  opus.c
+  passthrough.c
+  silk.c
+  speex_codec.c
+  正在生成代码...
+  openh264.cpp
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(F:\learn\opensource\av\pjproject-2.8\pjmedia\build\.\output\pjmedia_codec--Win32-vc8-Debug\pjmedia_codec.lib) does not match the Library's OutputFile property value (F:\learn\opensource\av\pjproject-2.8\pjmedia\lib\pjmedia-codec-i386-Win32-vc8-Debug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pjmedia_codec) does not match the Library's OutputFile property value (pjmedia-codec-i386-Win32-vc8-Debug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  pjmedia_codec.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjmedia\build\.\output\pjmedia_codec--Win32-vc8-Debug\pjmedia_codec.lib
