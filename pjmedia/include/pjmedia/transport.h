@@ -36,7 +36,7 @@
  * @{
  * The media transport (#pjmedia_transport) is the object to send and
  * receive media packets over the network. The media transport interface
- * allows the library to be extended to support different types of 
+ * allows the library to be extended/ to support different types of 
  * transports to send and receive packets.
  *
  * The media transport is declared as #pjmedia_transport "class", which
@@ -532,6 +532,7 @@ typedef struct pjmedia_transport_specific_info
     int			     cbsize;
 
     /**
+     * 
      * Storage buffer of transport specific info.
      */
     char		     buffer[PJMEDIA_TRANSPORT_SPECIFIC_INFO_MAXSIZE];

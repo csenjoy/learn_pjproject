@@ -1098,18 +1098,20 @@ static pj_status_t transport_get_info(pjmedia_transport *tp,
     srtp_info.peer_use = srtp->peer_use;
 
     spc_info_idx = info->specific_info_cnt++;
+    //store srtp node transport info to spc_info[spc_info_index]
     info->spc_info[spc_info_idx].type = PJMEDIA_TRANSPORT_TYPE_SRTP;
     info->spc_info[spc_info_idx].cbsize = sizeof(srtp_info);
     pj_memcpy(&info->spc_info[spc_info_idx].buffer, &srtp_info,
 	      sizeof(srtp_info));
-
+    //store keying transport info
     /* Invoke get_info() from any active keying method */
     for (i=0; i < srtp->keying_cnt; i++)
 	pjmedia_transport_get_info(srtp->keying[i], info);
-
+    //store underlying transport info 
     return pjmedia_transport_get_info(srtp->member_tp, info);
 }
 
+//In transport.h pjmedia_transport_attach() will call atth2 first if atth2 not empty
 static pj_status_t transport_attach2(pjmedia_transport *tp,
 				     pjmedia_transport_attach_param *param)
 {
@@ -1123,7 +1125,7 @@ static pj_status_t transport_attach2(pjmedia_transport *tp,
     pj_lock_acquire(srtp->mutex);
     if (param->rtp_cb || param->rtp_cb2) {
 	/* Do not update rtp_cb if not set, as attach() is called by
-	 * keying method.
+	 * keying method. @example in dtls_on_recv_rtp
 	 */
 	srtp->rtp_cb = param->rtp_cb;
 	srtp->rtp_cb2 = param->rtp_cb2;
@@ -1138,6 +1140,7 @@ static pj_status_t transport_attach2(pjmedia_transport *tp,
     member_param.rtp_cb = NULL;
     member_param.rtp_cb2 = &srtp_rtp_cb;
     member_param.rtcp_cb = &srtp_rtcp_cb;
+    //Assign member_tp when transport_srtp creating
     status = pjmedia_transport_attach2(srtp->member_tp, &member_param);
     if (status != PJ_SUCCESS) {
 	pj_lock_acquire(srtp->mutex);
@@ -1284,7 +1287,7 @@ static pj_status_t transport_destroy  (pjmedia_transport *tp)
      */
     for (i=0; i < srtp->all_keying_cnt; i++)
 	pjmedia_transport_close(srtp->all_keying[i]);
-
+    //No need to close transport in srtp->keying[] as it is refer to transport in all_keying[]
     /* Close member if configured */
     if (srtp->setting.close_member_tp && srtp->member_tp) {
 	pjmedia_transport_close(srtp->member_tp);
@@ -1492,7 +1495,7 @@ static pj_status_t transport_media_create(pjmedia_transport *tp,
     pj_bzero(&srtp->tx_policy_neg, sizeof(srtp->tx_policy_neg));
 
     srtp->media_option = member_tp_option = options;
-    srtp->offerer_side = (sdp_remote == NULL);
+    srtp->offerer_side = (sdp_remote == NULL);//remote sdp indicate answerer side
 
     if (srtp->offerer_side && srtp->setting.use == PJMEDIA_SRTP_DISABLED) {
 	/* If we are offerer and SRTP is disabled, simply bypass SRTP and
@@ -1504,11 +1507,12 @@ static pj_status_t transport_media_create(pjmedia_transport *tp,
 	/* If we are answerer and SRTP is disabled, we need to verify that
 	 * SRTP is disabled too in remote SDP, so we can't just skip keying.
 	 */
+    
 	srtp->bypass_srtp = PJ_FALSE;
 	srtp->keying_cnt = srtp->all_keying_cnt;
 	for (i = 0; i < srtp->all_keying_cnt; ++i)
 	    srtp->keying[i] = srtp->all_keying[i];
-
+    //member transport stacked under transport srtp no need validation.
 	member_tp_option |= PJMEDIA_TPMED_NO_TRANSPORT_CHECKING;
     }
 

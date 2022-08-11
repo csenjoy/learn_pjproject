@@ -1014,7 +1014,7 @@ static pj_status_t dtls_on_recv_rtp( pjmedia_transport *tp,
 		pj_sockaddr_set_port(&ap.rem_rtcp,
 				     pj_sockaddr_get_port(&ds->rem_addr)+1);
 	    }
-
+			//@Question: why attach srtp->base
 	    pjmedia_transport_attach2(&ds->srtp->base, &ap);
 
 #if DTLS_DEBUG

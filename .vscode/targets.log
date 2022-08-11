@@ -9,7 +9,7 @@ make.exe: *** No rule to make target 'build/host-.mak'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 19 10:29:56 2022
+# Make data base, printed on Wed Aug 10 11:10:45 2022
 
 # Variables
 
@@ -96,7 +96,7 @@ PJ_VERSION_REV :=
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10628_LAVVKHFIMXLFXPOJ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3656_BIFMMCKIXHVYNJLZ
 # makefile (from 'version.mak', line 5)
 PJ_VERSION_SUFFIX := 
 # environment
@@ -122,9 +122,9 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 JAVA_SDK = D:\Android\Android Studio\jre
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Administrator\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = C:\Users\Administrator\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # environment
@@ -172,7 +172,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\9e7283c68e6159fd1e9872b65f264be5-1.69.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\9e7283c68e6159fd1e9872b65f264be5-1.70.0-main-sock
 # environment
 VCPKG_VISUAL_STUDIO_PATH = D:\Visual Studio Community 2019
 # environment
@@ -240,7 +240,7 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 10628
+VSCODE_PID = 3656
 # variable set hash-table stats:
 # Load=114/1024=11%, Rehash=0, Collisions=15/146=10%
 
@@ -250,9 +250,9 @@ VSCODE_PID = 10628
 
 # Directories
 
-# . (key f:/learn/opensource/av/pjproject-2.8, mtime 1656749210): 52 files, no impossibilities.
+# . (key f:/learn/opensource/av/pjproject-2.8, mtime 1659412930): 54 files, no impossibilities.
 
-# 52 files, no impossibilities in 1 directories.
+# 54 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -585,12 +585,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 81 / storage = 937 B / avg = 11 B
-# current buf: size = 8162 B / used = 937 B / count = 81 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 83 / storage = 953 B / avg = 11 B
+# current buf: size = 8162 B / used = 953 B / count = 83 / avg = 11 B
 
-# strcache performance: lookups = 121 / hit rate = 33%
+# strcache performance: lookups = 123 / hit rate = 32%
 # hash-table stats:
-# Load=81/8192=1%, Rehash=0, Collisions=2/121=2%
-# Finished Make data base on Tue Jul 19 10:29:56 2022
+# Load=83/8192=1%, Rehash=0, Collisions=2/123=2%
+# Finished Make data base on Wed Aug 10 11:10:45 2022
 
  

@@ -4764,6 +4764,246 @@
 					"label": "pjmedia_vid_codec_h264_parse_fmtp: Function Definition"
 				}
 			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/stream.c",
+			"bookmarks": [
+				{
+					"line": 2244,
+					"column": 35,
+					"label": "pjmedia_stream_create: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/transport_srtp.c",
+			"bookmarks": [
+				{
+					"line": 132,
+					"column": 19,
+					"label": "struct crypto_suite: Struct Definition"
+				},
+				{
+					"line": 227,
+					"column": 20,
+					"label": "struct transport_srtp: Struct Definition"
+				},
+				{
+					"line": 491,
+					"column": 32,
+					"label": "pjmedia_srtp_init_lib: Function Definition"
+				},
+				{
+					"line": 503,
+					"column": 0,
+					"label": "pjmedia_srtp_init_lib: 1.srtp_init() "
+				},
+				{
+					"line": 513,
+					"column": 3,
+					"label": "pjmedia_srtp_init_lib: 2.dtls_init()"
+				},
+				{
+					"line": 673,
+					"column": 37,
+					"label": "pjmedia_transport_srtp_create: Function Definition"
+				},
+				{
+					"line": 687,
+					"column": 18,
+					"label": "pjmedia_transport_srtp_create: 1.Check crypto get_crypto_idx(name) crypto_suites[cs_idx].cipher_key_len"
+				},
+				{
+					"line": 704,
+					"column": 0,
+					"label": "pjmedia_transport_srtp_create: 2.pjmedia_srtp_init_lib(endpt)"
+				},
+				{
+					"line": 709,
+					"column": 1,
+					"label": "pjmedia_transport_srtp_create: 3.PJ_POOL_ZALLOC_T(pool, transport_srtp) and initialize it"
+				},
+				{
+					"line": 721,
+					"column": 0,
+					"label": "pjmedia_transport_srtp_create: 4.srtp->setting.crypto[].key initialize by crypto_suites"
+				},
+				{
+					"line": 743,
+					"column": 0,
+					"label": "pjmedia_transport_srtp_create: 5.pjmedia_srtp_enum_crypto(&srtp->setting.crypto_count, srtp->setting.crypto)"
+				},
+				{
+					"line": 760,
+					"column": 1,
+					"label": "pjmedia_transport_srtp_create: 6.srtp->base.op = &transport_srtp_op"
+				},
+				{
+					"line": 772,
+					"column": 0,
+					"label": "pjmedia_transport_srtp_create: 7.pjmedia_srtp_enum_keying(srtp->setting.key_count, srtp->setting.keying)"
+				},
+				{
+					"line": 782,
+					"column": 4,
+					"label": "pjmedia_transport_srtp_create: 8.sdes_create(srtp, &srtp->all_keying[srtp->all_keying_cnt++])"
+				},
+				{
+					"line": 788,
+					"column": 5,
+					"label": "pjmedia_transport_srtp_create: 9.dtls_create(srtp, &srtp->all_keying[all_keying_cnt++]"
+				},
+				{
+					"line": 1079,
+					"column": 29,
+					"label": "transport_get_info: Function Definition"
+				},
+				{
+					"line": 1114,
+					"column": 30,
+					"label": "transport_attach2: Function Definition"
+				},
+				{
+					"line": 1125,
+					"column": 0,
+					"label": "transport_attach2: 1.if (param->rtp_cb || param->rtp_cb2) do not update rtp_cb if not set, as attach is called by keying method"
+				},
+				{
+					"line": 1143,
+					"column": 12,
+					"label": "transport_attach2: 2.pjmedia_transport_attach2(srtp->member_tp, &member_param) using rtp_cb2 = srtp_rtp_cb "
+				},
+				{
+					"line": 1161,
+					"column": 22,
+					"label": "transport_detach: Function Definition"
+				},
+				{
+					"line": 1182,
+					"column": 32,
+					"label": "transport_send_rtp: Function Definition"
+				},
+				{
+					"line": 1192,
+					"column": 0,
+					"label": "transport_send_rtp: 1.pjmedia_transport_send_rtp(member_tp, pkt, size) directly if srtp->bypass_srtp"
+				},
+				{
+					"line": 1204,
+					"column": 1,
+					"label": "transport_send_rtp: 2.srtp_protect(srtp->srtp_tx_ctx, srtp->rtp_tx_buffer, &len)"
+				},
+				{
+					"line": 1275,
+					"column": 30,
+					"label": "transport_destory: Function Definition"
+				},
+				{
+					"line": 1310,
+					"column": 17,
+					"label": "srtp_rtp_cb: Function Definition"
+				},
+				{
+					"line": 1349,
+					"column": 33,
+					"label": "srtp_rtp_cb: .pjmedia_transport_send_rtp(srtp->keying[i], pkt, size)(override dtls_on_recv_rtp)"
+				},
+				{
+					"line": 1435,
+					"column": 14,
+					"label": "srtp_rtcp_cb: Function Definition"
+				},
+				{
+					"line": 1479,
+					"column": 28,
+					"label": "transport_media_create: Function Definition"
+				},
+				{
+					"line": 1499,
+					"column": 1,
+					"label": "transport_media_create: 1.srtp->bypass_srtp check"
+				},
+				{
+					"line": 1518,
+					"column": 3,
+					"label": "transport_media_create: 2.pjmedia_transport_media_create(srtp->member_tp, sdp_pool, member_tp_option, sdp_remote, media_index))"
+				},
+				{
+					"line": 1539,
+					"column": 0,
+					"label": "transport_media_create: 3.pjmedia_transport_media_create(srtp->keying[i], sdp_pool, options, sdp_remote, media_index)"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/transport_srtp_sdes.c",
+			"bookmarks": [
+				{
+					"line": 72,
+					"column": 24,
+					"label": "sdes_create: Function Definition"
+				},
+				{
+					"line": 82,
+					"column": 3,
+					"label": "sdes_create: 1.(pjmedia_transport *)sdes->user_data = srtp"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/transport_srtp_dtls.c",
+			"bookmarks": [
+				{
+					"line": 143,
+					"column": 26,
+					"label": "dtls_init: Function Definition"
+				},
+				{
+					"line": 149,
+					"column": 1,
+					"label": "dtls_init: 1.pj_ssl_cipher_get_availables(ciphers, &cipher_num) make sure OpenSSL library has ben initialized"
+				},
+				{
+					"line": 155,
+					"column": 0,
+					"label": "dtls_init: 2.ssl_generate_cert(&dtls_cert, &dtls_priv_key)"
+				},
+				{
+					"line": 179,
+					"column": 20,
+					"label": "dtls_create: Function Definition"
+				},
+				{
+					"line": 284,
+					"column": 28,
+					"label": "ssl_generate_cert: Function Definition"
+				},
+				{
+					"line": 967,
+					"column": 28,
+					"label": "dtls_on_recv_rtp: Function Definition"
+				},
+				{
+					"line": 1050,
+					"column": 28,
+					"label": "dtls_media_create: Function Definition"
+				},
+				{
+					"line": 1128,
+					"column": 26,
+					"label": "dtls_encode_sdp: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjlib/include/pj/ssl_sock.h",
+			"bookmarks": [
+				{
+					"line": 305,
+					"column": 17,
+					"label": "enum pj_ssl_cipher: Enum Definition"
+				}
+			]
 		}
 	]
 }

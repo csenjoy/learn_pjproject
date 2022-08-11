@@ -3,7 +3,6 @@ make.exe: Entering directory 'f:/learn/opensource/av/pjproject-2.8'
  
 Makefile:2: build/host-.mak: No such file or directory
 make.exe: *** No rule to make target 'build/host-.mak'.
-
 Makefile:1: build.mak: No such file or directory
 make.exe: *** No rule to make target 'build.mak'.
 

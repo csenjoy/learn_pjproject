@@ -19,8 +19,11 @@
     "pool_alt.h": "c",
     "ioqueue.h": "c",
     "vid_stream.h": "c",
-    "vid_codec.h": "c"
+    "vid_codec.h": "c",
+    "transport_ice.h": "c",
+    "ssl_sock.h": "c"
   },
   "bookmarks.saveBookmarksInProject": true,
-  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+  "svn.ignoreMissingSvnWarning": true
 }
