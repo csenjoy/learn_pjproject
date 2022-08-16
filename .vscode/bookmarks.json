@@ -4772,6 +4772,11 @@
 					"line": 2244,
 					"column": 35,
 					"label": "pjmedia_stream_create: Function Definition"
+				},
+				{
+					"line": 2953,
+					"column": 29,
+					"label": "pjmedia_stream_start: Function Definition"
 				}
 			]
 		},
@@ -4852,6 +4857,11 @@
 					"line": 788,
 					"column": 5,
 					"label": "pjmedia_transport_srtp_create: 9.dtls_create(srtp, &srtp->all_keying[all_keying_cnt++]"
+				},
+				{
+					"line": 1020,
+					"column": 21,
+					"label": "start_srtp: Function Definition"
 				},
 				{
 					"line": 1079,
@@ -4969,9 +4979,24 @@
 					"label": "dtls_init: 2.ssl_generate_cert(&dtls_cert, &dtls_priv_key)"
 				},
 				{
+					"line": 166,
+					"column": 19,
+					"label": "dtls_deinit: Function Definition"
+				},
+				{
 					"line": 179,
 					"column": 20,
 					"label": "dtls_create: Function Definition"
+				},
+				{
+					"line": 258,
+					"column": 31,
+					"label": "ssl_get_fingerprint: Function Definition"
+				},
+				{
+					"line": 265,
+					"column": 0,
+					"label": "ssl_get_fingerprint: 1.X509_digest(cert, is_sha256 ? EVP_sha256() : EVP_sha1(), tmp, &len)"
 				},
 				{
 					"line": 284,
@@ -4979,19 +5004,89 @@
 					"label": "ssl_generate_cert: Function Definition"
 				},
 				{
-					"line": 967,
+					"line": 374,
+					"column": 24,
+					"label": "ssl_create: Function Definition"
+				},
+				{
+					"line": 381,
+					"column": 1,
+					"label": "ssl_create: 1.if (ds->ossl_ssl) return PJ_SUCCESS /*Check if it is already instantiated*/"
+				},
+				{
+					"line": 385,
+					"column": 2,
+					"label": "ssl_create: 2.ctx = SSL_CTX_new(DTLS_method())"
+				},
+				{
+					"line": 552,
+					"column": 27,
+					"label": "ssl_match_fingerprint: Function Definition"
+				},
+				{
+					"line": 721,
+					"column": 26,
+					"label": "ssl_handshake: Function Definition"
+				},
+				{
+					"line": 727,
+					"column": 1,
+					"label": "ssl_handshake: 1.ssl_create(ds)"
+				},
+				{
+					"line": 902,
+					"column": 30,
+					"label": "ssl_on_recv_packet: Function Definition"
+				},
+				{
+					"line": 937,
+					"column": 22,
+					"label": "on_ice_complete2: Function Definition"
+				},
+				{
+					"line": 951,
+					"column": 0,
+					"label": "on_ice_complete2: 1.ssl_handshake(ds)"
+				},
+				{
+					"line": 968,
 					"column": 28,
 					"label": "dtls_on_recv_rtp: Function Definition"
 				},
 				{
-					"line": 1050,
+					"line": 1018,
+					"column": 15,
+					"label": "dtls_on_recv_rtp: 1.if (!ds->use_ice && !ds->nego_completed) { pjmedia_transport_attach2(&ds->srtp->base, &ap) })"
+				},
+				{
+					"line": 1041,
+					"column": 28,
+					"label": "dtls_on_recv_rtp: 2.ssl_handshake(ds) for DTLS_SETUP_PASSIVE"
+				},
+				{
+					"line": 1047,
+					"column": 0,
+					"label": "dtls_on_recv_rtp: 3.ssl_on_recv_packet(ds, pkt, size)"
+				},
+				{
+					"line": 1051,
 					"column": 28,
 					"label": "dtls_media_create: Function Definition"
 				},
 				{
-					"line": 1128,
+					"line": 1129,
 					"column": 26,
 					"label": "dtls_encode_sdp: Function Definition"
+				},
+				{
+					"line": 1515,
+					"column": 37,
+					"label": "pjmedia_transport_srtp_dtls_get_fingerprint: Function Definition"
+				},
+				{
+					"line": 1533,
+					"column": 42,
+					"label": "pjmedia_transport_srtp_dtls_start_nego: Function Definition"
 				}
 			]
 		},
@@ -5002,6 +5097,16 @@
 					"line": 305,
 					"column": 17,
 					"label": "enum pj_ssl_cipher: Enum Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/session.c",
+			"bookmarks": [
+				{
+					"line": 85,
+					"column": 26,
+					"label": "pjmedia_session_create: Function Definition"
 				}
 			]
 		}

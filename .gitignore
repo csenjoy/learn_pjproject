@@ -69,7 +69,8 @@ Thumbs.db
 # --------
 *.dll
 *.exe
-
+*.log
+*.tlog
 #Visual Studio
 *.zip
 /Debug/
@@ -78,3 +79,6 @@ Thumbs.db
 /Release/
 
 doc/doxygen
+pjsip/lib/*.lib
+pjmedia/build/output/*
+third_party/lib/*.lib
