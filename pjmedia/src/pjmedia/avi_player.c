@@ -286,6 +286,12 @@ pjmedia_avi_player_create_streams(pj_pool_t *pool,
                            sizeof(strl_hdr_t));
         if (status != PJ_SUCCESS)
             goto on_error;
+
+        size_to_read = avi_hdr.strl_hdr->strh_size + 12 + 8 - sizeof(strl_hdr_t);
+        status = pj_file_setpos(fport[0]->fd, size_to_read, PJ_SEEK_CUR);
+	    if (status != PJ_SUCCESS) {
+            goto on_error;
+	    }
         
         elem = COMPARE_TAG(avi_hdr.strl_hdr[i].data_type, 
                            PJMEDIA_AVI_VIDS_TAG) ? 
@@ -314,7 +320,7 @@ pjmedia_avi_player_create_streams(pj_pool_t *pool,
 
         /* Skip the remainder of the header */
         size_to_read = avi_hdr.strl_hdr[i].list_sz - (sizeof(strl_hdr_t) -
-                       8) - elem;
+                       8) - elem - size_to_read;
 	status = pj_file_setpos(fport[0]->fd, size_to_read, PJ_SEEK_CUR);
 	if (status != PJ_SUCCESS) {
             goto on_error;

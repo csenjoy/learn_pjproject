@@ -314,7 +314,7 @@ static int aviplay(pj_pool_t *pool, const char *fname)
             pj_bzero(&codec_port, sizeof(codec_port));
             status = pjmedia_port_info_init2(&codec_port.info, &port_name,
                                              0x1234,
-                                             PJMEDIA_DIR_ENCODING, 
+                                             PJMEDIA_DIR_ENCODING,
                                              &codec_param.dec_fmt);
             if (status != PJ_SUCCESS) {
                 rc = 260; goto on_return;
@@ -335,7 +335,7 @@ static int aviplay(pj_pool_t *pool, const char *fname)
                 pjmedia_format_copy(&conv_param.src, &param.vidparam.fmt);
                 pjmedia_format_copy(&conv_param.dst, &param.vidparam.fmt);
                 conv_param.dst.id = codecp->dst_fmt;
-                param.vidparam.fmt.id = conv_param.dst.id;
+                param.vidparam.fmt.id = conv_param.dst.id;//pjmedia_vid_port创建参数fmt.id修改为conv_para.dst.id 
 		
                 status = pjmedia_converter_create(NULL, pool, &conv_param,
                                                   &codec_port_data.conv);

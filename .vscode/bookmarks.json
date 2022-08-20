@@ -4149,6 +4149,16 @@
 					"label": "pjmedia_transport_udp_create: Function Definition"
 				},
 				{
+					"line": 212,
+					"column": 38,
+					"label": "pjmedia_transport_udp_create3: Function Definition"
+				},
+				{
+					"line": 265,
+					"column": 29,
+					"label": "pjmedia_transport_udp_create3: .pjmedia_transport_udp_attach(endpt, name, &si, options, p_tp)"
+				},
+				{
 					"line": 280,
 					"column": 38,
 					"label": "pjmedia_transport_udp_attach: Function Definition"
@@ -4157,6 +4167,16 @@
 					"line": 298,
 					"column": 2,
 					"label": "pjmedia_transport_udp_attach: 1.ioqueue = pjmedia_endpt_get_ioqueue(endpt)"
+				},
+				{
+					"line": 692,
+					"column": 25,
+					"label": "tp_attach: Function Definition"
+				},
+				{
+					"line": 1000,
+					"column": 34,
+					"label": "transport_media_create: Function Definition"
 				}
 			]
 		},
@@ -4247,6 +4267,11 @@
 					"line": 509,
 					"column": 15,
 					"label": "pjmedia_transport::op: pjmedia_transport_op *op"
+				},
+				{
+					"line": 766,
+					"column": 37,
+					"label": "pjmedia_transport_attach: Function Definition"
 				}
 			]
 		},
@@ -4572,6 +4597,76 @@
 					"line": 81,
 					"column": 9,
 					"label": "pjmedia_vid_port::strm_cb: pjmedia_vid_dev_cb strm_cb"
+				},
+				{
+					"line": 488,
+					"column": 33,
+					"label": "pjmedia_vid_port_create: Function Definition"
+				},
+				{
+					"line": 518,
+					"column": 2,
+					"label": "pjmedia_vid_port_create: 1.pjmedia_vid_dev_get_info(cap_id/rend_id, &di)"
+				},
+				{
+					"line": 531,
+					"column": 1,
+					"label": "pjmedia_vid_port_create: 2.pjmedia_vid_port_param vparam = prm->vidparam//copy"
+				},
+				{
+					"line": 549,
+					"column": 0,
+					"label": "pjmedia_vid_port_create: 3.vparam.fmt.id = get_match_format_id(prm->vidparam.fmt.id, &di)"
+				},
+				{
+					"line": 578,
+					"column": 2,
+					"label": "pjmedia_vid_port_create: 4.vp->stream_role = di.has_callback ? ROLE_ACTIVE : ROLE_PASSIVE"
+				},
+				{
+					"line": 592,
+					"column": 1,
+					"label": "pjmedia_vid_port_create: 5.pjmedia_vid_dev_stream_create(&vparam, &vid_cb, vp, &vp->strm)"
+				},
+				{
+					"line": 605,
+					"column": 2,
+					"label": "pjmedia_vid_port_create: 6.pjmedia_event_subscribe(NULL, &vidstream_event_cb, vp, vp->strm)"
+				},
+				{
+					"line": 616,
+					"column": 3,
+					"label": "pjmedia_vid_port_create: 7.create_converter(vp)//using vp->conv.conv_param"
+				},
+				{
+					"line": 634,
+					"column": 1,
+					"label": "pjmedia_vid_port_create: 8.pjmedia_clock_create2(...,clock_param, enc_clock_cb/dec_clock_cb)//if role active and stream_role PASSTIVE"
+				},
+				{
+					"line": 650,
+					"column": 18,
+					"label": "pjmedia_vid_port_create: 9.pjmedia_port_info_init2(vid_pasv_port) //vid_pasv_port_get_frame/put_frame register"
+				},
+				{
+					"line": 1073,
+					"column": 18,
+					"label": "enc_clock_cb: Function Definition"
+				},
+				{
+					"line": 1113,
+					"column": 17,
+					"label": "dec_clock_cb: Function Definition"
+				},
+				{
+					"line": 1137,
+					"column": 27,
+					"label": "vidstream_cap_cb: Function Definition"
+				},
+				{
+					"line": 1158,
+					"column": 26,
+					"label": "vidstream_render_cb: Function Definition"
 				}
 			]
 		},
@@ -4774,9 +4869,64 @@
 			"path": "pjmedia/src/pjmedia/stream.c",
 			"bookmarks": [
 				{
+					"line": 511,
+					"column": 24,
+					"label": "get_frame: Function Definition"
+				},
+				{
+					"line": 560,
+					"column": 11,
+					"label": "get_frame: .pjmedia_jbuf_get_frame2"
+				},
+				{
+					"line": 804,
+					"column": 23,
+					"label": "get_frame_ext: Function Definition"
+				},
+				{
+					"line": 1270,
+					"column": 29,
+					"label": "put_frame_imp: Function Definition"
+				},
+				{
+					"line": 1531,
+					"column": 23,
+					"label": "put_frame: Function Definition"
+				},
+				{
+					"line": 1609,
+					"column": 0,
+					"label": "put_frame: .put_frame_imp(port, &tmp_rebuffer_frame)"
+				},
+				{
+					"line": 1737,
+					"column": 12,
+					"label": "on_rx_rtp: Function Definition"
+				},
+				{
+					"line": 2113,
+					"column": 12,
+					"label": "on_rx_rtcp: Function Definition"
+				},
+				{
+					"line": 2135,
+					"column": 27,
+					"label": "create_channel: Function Definition"
+				},
+				{
 					"line": 2244,
 					"column": 35,
 					"label": "pjmedia_stream_create: Function Definition"
+				},
+				{
+					"line": 2578,
+					"column": 18,
+					"label": "pjmedia_stream_create: .create_channel"
+				},
+				{
+					"line": 2657,
+					"column": 30,
+					"label": "pjmedia_stream_create: .pjmedia_transport_attach2(tp, &att_param)"
 				},
 				{
 					"line": 2953,
@@ -5112,6 +5262,111 @@
 					"line": 85,
 					"column": 26,
 					"label": "pjmedia_session_create: Function Definition"
+				},
+				{
+					"line": 121,
+					"column": 24,
+					"label": "pjmedia_session_create: .pjmedia_stream_create"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/jbuf.c",
+			"bookmarks": [
+				{
+					"line": 87,
+					"column": 16,
+					"label": "struct pjmedia_jbuf: Struct Definition"
+				},
+				{
+					"line": 561,
+					"column": 33,
+					"label": "pjmedia_jbuf_create: Function Definition"
+				},
+				{
+					"line": 598,
+					"column": 32,
+					"label": "pjmedia_jbuf_set_ptime"
+				},
+				{
+					"line": 617,
+					"column": 33,
+					"label": "pjmedia_jbuf_set_fixed: Function Definition"
+				},
+				{
+					"line": 634,
+					"column": 31,
+					"label": "pjmedia_jbuf_set_adaptive: Function Definition"
+				},
+				{
+					"line": 653,
+					"column": 33,
+					"label": "pjmedia_jbuf_set_discard: Function Definition"
+				},
+				{
+					"line": 677,
+					"column": 34,
+					"label": "pjmedia_jbuf_rest: Function Definition"
+				},
+				{
+					"line": 694,
+					"column": 40,
+					"label": "pjmedia_jbuf_destroy: Function Definition"
+				},
+				{
+					"line": 967,
+					"column": 30,
+					"label": "pjmedia_jbuf_put_frame: Function Definition"
+				},
+				{
+					"line": 1057,
+					"column": 30,
+					"label": "pjmedia_jbuf_get_frame: Function Definition"
+				},
+				{
+					"line": 1154,
+					"column": 39,
+					"label": "pjmedia_jbuf_get_state: Function Definition"
+				},
+				{
+					"line": 1181,
+					"column": 26,
+					"label": "pjmedia_jbuf_peek_frame: Function Definition"
+				},
+				{
+					"line": 1204,
+					"column": 37,
+					"label": "pjmedia_jbuf_remove_frame: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/vid_stream.c",
+			"bookmarks": [
+				{
+					"line": 106,
+					"column": 21,
+					"label": "pjmedia_vid_stream: Struct Definition"
+				},
+				{
+					"line": 1481,
+					"column": 34,
+					"label": "pjmedia_vid_stream_create: Function Definition"
+				},
+				{
+					"line": 1757,
+					"column": 29,
+					"label": "pjmedia_vid_stream_create: .pjmedia_transport_attach2(tp, &att_param)"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/include/pjmedia/transport_udp.h",
+			"bookmarks": [
+				{
+					"line": 144,
+					"column": 46,
+					"label": "pjmedia_transport_udp_attach: Function Definition"
 				}
 			]
 		}
