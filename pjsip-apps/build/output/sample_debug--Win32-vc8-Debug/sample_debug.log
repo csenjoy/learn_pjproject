@@ -1,3 +1,0 @@
-﻿  debug.c
-f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  sample_debug.vcxproj -> F:\learn\opensource\av\pjproject-2.8\pjsip-apps\build\.\output\sample_debug--Win32-vc8-Debug\sample_debug.exe

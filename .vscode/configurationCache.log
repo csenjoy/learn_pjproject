@@ -1,1 +1,0 @@
-{"buildTargets":[".PHONY","all","clean","dep","depend","distclean","doc","install","lib","pjlib-test","pjlib-util-test","pjmedia-test","pjnath-test","pjsip-test","pjsua-test","print","realclean","selftest","size","uninstall","xhdrid"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

@@ -78,7 +78,10 @@ Thumbs.db
 /.vs/
 /Release/
 
-doc/doxygen
+/doc/doxygen
 *.bsc
 *.log
 *.tlog
+output/
+bin/
+obj/
