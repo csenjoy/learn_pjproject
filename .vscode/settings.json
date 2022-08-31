@@ -21,7 +21,14 @@
     "vid_stream.h": "c",
     "vid_codec.h": "c",
     "transport_ice.h": "c",
-    "ssl_sock.h": "c"
+    "ssl_sock.h": "c",
+    "plc.h": "c",
+    "sound_port.h": "c",
+    "stream_common.h": "c",
+    "event.h": "c",
+    "vid_tee.h": "c",
+    "resamplesubs.h": "c",
+    "bidirectional.h": "c"
   },
   "bookmarks.saveBookmarksInProject": true,
   "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",

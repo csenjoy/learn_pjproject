@@ -79,6 +79,6 @@ Thumbs.db
 /Release/
 
 doc/doxygen
-pjsip/lib/*.lib
-pjmedia/build/output/*
-third_party/lib/*.lib
+*.bsc
+*.log
+*.tlog

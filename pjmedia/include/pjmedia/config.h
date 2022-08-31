@@ -538,7 +538,7 @@
  * Default: 0 (no).
  */
 #ifndef PJMEDIA_HAS_RTCP_XR
-#   define PJMEDIA_HAS_RTCP_XR			0
+#   define PJMEDIA_HAS_RTCP_XR			1
 #endif
 
 
@@ -550,7 +550,7 @@
  * Default: 0 (disabled)
  */
 #ifndef PJMEDIA_STREAM_ENABLE_XR
-#   define PJMEDIA_STREAM_ENABLE_XR		0
+#   define PJMEDIA_STREAM_ENABLE_XR		1
 #endif
 
 
@@ -1208,7 +1208,7 @@
  * Default: 0 (disabled)
  */
 #ifndef PJMEDIA_STREAM_ENABLE_KA
-#   define PJMEDIA_STREAM_ENABLE_KA		    0
+#   define PJMEDIA_STREAM_ENABLE_KA		     	1
 #endif
 
 
@@ -1481,7 +1481,7 @@
  * Default: 0 (disable)
  */
 #ifndef PJMEDIA_HAS_LIBYUV
-#   define PJMEDIA_HAS_LIBYUV				0
+#   define PJMEDIA_HAS_LIBYUV				1
 #endif
 
 

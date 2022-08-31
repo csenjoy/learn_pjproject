@@ -456,12 +456,12 @@ static unsigned jb_framelist_remove_head(jb_framelist_t *framelist,
 
 
 static pj_status_t jb_framelist_put_at(jb_framelist_t *framelist,
-				       int index,
+				       int index,//frame_seq
 				       const void *frame,
 				       unsigned frame_size,
 				       pj_uint32_t bit_info,
-				       pj_uint32_t ts,
-				       unsigned frame_type)
+				       pj_uint32_t ts,//rtp hdr timestamp
+				       unsigned frame_type)//frame_type @see pjmedia_jb_frame_type
 {
     int distance;
     unsigned pos;
@@ -470,14 +470,14 @@ static pj_status_t jb_framelist_put_at(jb_framelist_t *framelist,
 
     PJ_ASSERT_RETURN(frame_size <= framelist->frame_size, PJ_EINVAL);
 
-    /* too late or sequence restart */
-    if (index < framelist->origin) {
+    /* too late or sequence restart*/
+    if (index < framelist->origin) {//incoming frame seq smaller than framelist head frame seq 
 	if (framelist->origin - index < MAX_MISORDER) {
-	    /* too late */
+	    /* too late */ 
 	    return PJ_ETOOSMALL;
 	} else {
 	    /* sequence restart */
-	    framelist->origin = index - framelist->size;
+	    framelist->origin = index - framelist->size;//recount framelist head frame seq by incoming frame seq
 	}
     }
 
@@ -995,7 +995,7 @@ PJ_DEF(void) pjmedia_jbuf_put_frame3(pjmedia_jbuf *jb,
     pj_size_t min_frame_size;
     int new_size, cur_size;
     pj_status_t status;
-
+		//effective size
     cur_size = jb_framelist_eff_size(&jb->jb_framelist);
 
     /* Check if frame size is larger than JB frame size */

@@ -9,7 +9,7 @@ make.exe: *** No rule to make target 'build/host-.mak'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 10 11:10:45 2022
+# Make data base, printed on Sat Aug 20 13:11:27 2022
 
 # Variables
 
@@ -72,11 +72,13 @@ VSCODE_CWD = D:\Microsoft VS Code
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
-PATH = D:\Python38\Scripts\;D:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\TortoiseSVN\bin;F:\software\sqliteDll;C:\Program Files (x86)\Vim\vim74;D:\putty\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib;D:\DevEnv\mingw64\bin;D:\��������������\jdk1.6\bin;D:\������;������\tomcat6.0\bin;D:\DevEnv\mingw64\bin;D:\Git\cmd;D:\DevEnv\CMake\bin;D:\DevEnv\MSYS2\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\DevEnv\protoc\bin;D:\DevEnv\vcpkg;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;D:\Graphviz\bin;D;C:\Program Files (x86)\ZeroTier\One\;;D:\Microsoft VS Code\bin;D:\DevEnv\android-ndk-r21b-windows-x86_64;D:\Android\Android Studio\jre\bin;F:\software\eclipse\eclipse\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;;D:\IntelliJ IDEA Community Edition 2020.3.2\bin;;D:\PyCharm 2021.1.1\bin;;C:\Users\Administrator\.dotnet\tools
+PATH = D:\Python38\Scripts\;D:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\TortoiseSVN\bin;F:\software\sqliteDll;C:\Program Files (x86)\Vim\vim74;D:\putty\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib;D:\DevEnv\mingw64\bin;D:\��������������\jdk1.6\bin;D:\������;������\tomcat6.0\bin;D:\DevEnv\mingw64\bin;D:\Git\cmd;D:\DevEnv\CMake\bin;D:\DevEnv\MSYS2\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\DevEnv\protoc\bin;D:\DevEnv\vcpkg;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;D:\Graphviz\bin;D;C:\Program Files (x86)\ZeroTier\One\;;D:\Microsoft VS Code\bin;D:\DevEnv\android-ndk-r21b-windows-x86_64;D:\Android\Android Studio\jre\bin;F:\software\eclipse\eclipse\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;;D:\IntelliJ IDEA Community Edition 2020.3.2\bin;;D:\PyCharm 2021.1.1\bin;;C:\Users\Administrator\.dotnet\tools;D:\DevEnv\ffmpeg\dll
 # environment
 VS110COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+FFMPEG_ROOT = D:\DevEnv\ffmpeg
 # environment
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
@@ -96,7 +98,7 @@ PJ_VERSION_REV :=
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3656_BIFMMCKIXHVYNJLZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9768_QRYSSJSAAAULYCZX
 # makefile (from 'version.mak', line 5)
 PJ_VERSION_SUFFIX := 
 # environment
@@ -124,7 +126,7 @@ JAVA_SDK = D:\Android\Android Studio\jre
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\Administrator\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # environment
@@ -240,9 +242,9 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 3656
+VSCODE_PID = 9768
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=15/146=10%
+# Load=115/1024=11%, Rehash=0, Collisions=15/147=10%
 
 # Pattern-specific Variable Values
 
@@ -250,7 +252,7 @@ VSCODE_PID = 3656
 
 # Directories
 
-# . (key f:/learn/opensource/av/pjproject-2.8, mtime 1659412930): 54 files, no impossibilities.
+# . (key f:/learn/opensource/av/pjproject-2.8, mtime 1660903034): 54 files, no impossibilities.
 
 # 54 files, no impossibilities in 1 directories.
 
@@ -591,6 +593,6 @@ install:
 # strcache performance: lookups = 123 / hit rate = 32%
 # hash-table stats:
 # Load=83/8192=1%, Rehash=0, Collisions=2/123=2%
-# Finished Make data base on Wed Aug 10 11:10:45 2022
+# Finished Make data base on Sat Aug 20 13:11:27 2022
 
  

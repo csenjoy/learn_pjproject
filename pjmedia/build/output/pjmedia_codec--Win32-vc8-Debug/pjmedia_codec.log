@@ -4,6 +4,7 @@ f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : war
   ffmpeg_vid_codecs.c
 f:\learn\opensource\av\pjproject-2.8\third_party\ffmpeg\include\libavutil\rational.h(73): warning C4204: 使用了非标准扩展 : 非常量聚合初始值设定项
 f:\learn\opensource\av\pjproject-2.8\third_party\ffmpeg\include\libavutil\rational.h(161): warning C4204: 使用了非标准扩展 : 非常量聚合初始值设定项
+f:\learn\opensource\av\pjproject-2.8\pjmedia\src\pjmedia-codec\ffmpeg_vid_codecs.c(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   g722.c
   g7221.c
 f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
@@ -13,6 +14,7 @@ f:\learn\opensource\av\pjproject-2.8\pjmedia\include\pjmedia-codec\g7221.h : war
   gsm.c
   h263_packetizer.c
   h264_packetizer.c
+f:\learn\opensource\av\pjproject-2.8\pjmedia\src\pjmedia-codec\h264_packetizer.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   ilbc.c
   ipp_codecs.c
   l16.c

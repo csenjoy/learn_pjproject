@@ -3254,6 +3254,11 @@
 			"path": "pjmedia/src/pjmedia/clock_thread.c",
 			"bookmarks": [
 				{
+					"line": 46,
+					"column": 36,
+					"label": "pjmedia_clock_src_update"
+				},
+				{
 					"line": 109,
 					"column": 13,
 					"label": "struct pjmedia_clock: Struct Definition"
@@ -5279,6 +5284,21 @@
 					"label": "struct pjmedia_jbuf: Struct Definition"
 				},
 				{
+					"line": 457,
+					"column": 33,
+					"label": "jb_framelist_put_at: Function Definition"
+				},
+				{
+					"line": 473,
+					"column": 1,
+					"label": "jb_framelist_put_at: 1.检测frame_seq与framelist中的origin frame_seq，判断frame too late or sequeue restart"
+				},
+				{
+					"line": 493,
+					"column": 11,
+					"label": "jb_framelist_put_at: 2.判断incoming frame seq 与 framelist head frame seq 的distance，决定是否丢弃incoming frame或者reset buffer"
+				},
+				{
 					"line": 561,
 					"column": 33,
 					"label": "pjmedia_jbuf_create: Function Definition"
@@ -5319,9 +5339,29 @@
 					"label": "pjmedia_jbuf_put_frame: Function Definition"
 				},
 				{
+					"line": 986,
+					"column": 29,
+					"label": "pjmedia_jbuf_put_frame3: Function Definition"
+				},
+				{
+					"line": 998,
+					"column": 10,
+					"label": "pjmedia_jbuf_pu_frame3: 1.cur_size = jb_framelist_eff_size(&jb->jb_framelist)"
+				},
+				{
+					"line": 1008,
+					"column": 0,
+					"label": "pjmedia_jbuf_put_frame3: 2.jb_framelist_put_at(&jb->jb_framelist, frame_seq, frame, (unsigned)min_frame_size, bit_info, ts, PJMEDIA_JB_NORMAL_FRAME)"
+				},
+				{
 					"line": 1057,
 					"column": 30,
 					"label": "pjmedia_jbuf_get_frame: Function Definition"
+				},
+				{
+					"line": 1081,
+					"column": 28,
+					"label": "pjmedia_jbuf_get_frame3: Function Definition"
 				},
 				{
 					"line": 1154,
@@ -5349,6 +5389,26 @@
 					"label": "pjmedia_vid_stream: Struct Definition"
 				},
 				{
+					"line": 611,
+					"column": 0,
+					"label": "on_rx_rtp: Function Definition"
+				},
+				{
+					"line": 648,
+					"column": 1,
+					"label": "on_rx_rtp: .pjmedia_rtp_decode_rtp(&channel->rtp, pkt, (int)bytes_read, &hdr, &payload, &payloadlen)"
+				},
+				{
+					"line": 669,
+					"column": 3,
+					"label": "on_rx_rtp: .pjmedia_rtp_session_update2(&channel->rtp, hdr, &seq_st, PJ_TRUE)"
+				},
+				{
+					"line": 811,
+					"column": 17,
+					"label": "on_rx_rtp: .pjmedia_jbuf_put_frame3(stream->jb, payload, payloadlen, 0, pj_ntohs(hdr->seq), pj_ntohl(hdr->ts), NULL)"
+				},
+				{
 					"line": 1481,
 					"column": 34,
 					"label": "pjmedia_vid_stream_create: Function Definition"
@@ -5367,6 +5427,56 @@
 					"line": 144,
 					"column": 46,
 					"label": "pjmedia_transport_udp_attach: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/resample_port.c",
+			"bookmarks": [
+				{
+					"line": 132,
+					"column": 32,
+					"label": "resample_put_frame: Function Definition"
+				},
+				{
+					"line": 144,
+					"column": 1,
+					"label": "resample_put_frame: 1.pjmedia_resample_run(rport->resample_put, (const pj_int16_t *)frame->buf, rport->put_buf)"
+				},
+				{
+					"line": 158,
+					"column": 1,
+					"label": "resample_put_frame: .pjmedia_port_put_frame(rport->dn_port, &downstream_frame)"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/include/pjmedia/rtp.h",
+			"bookmarks": [
+				{
+					"line": 85,
+					"column": 17,
+					"label": "struct pjmedia_rtp_hdr: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia/rtp.c",
+			"bookmarks": [
+				{
+					"line": 149,
+					"column": 31,
+					"label": "pjmedia_rtp_decode_rtp: Function Definition"
+				},
+				{
+					"line": 162,
+					"column": 33,
+					"label": "pjmedia_rtp_decode_rtp2: Function Definition"
+				},
+				{
+					"line": 225,
+					"column": 28,
+					"label": "pjmedia_rtp_session_update2: Function Definition"
 				}
 			]
 		}

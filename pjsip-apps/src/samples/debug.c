@@ -23,10 +23,10 @@
  *   The purpose of this file is to allow debugging of a sample application
  *   using MSVC IDE.
  */
-
+#define PJMEDIA_HAS_VIDEO 1
 /* To debug a sample application, include the source file here.
  * E.g.:
  *  #include "playfile.c"
  */
-#include "vid_codec_test.c"
+#include "simpleua.c"
 
