@@ -1,0 +1,15 @@
+[
+  { 
+        "directory": "F:/learn/opensource/av/pjproject-2.8/build",
+        "command": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/Llvm/x64/bin/clangd.exe \
+                   -I../pjsip/include \
+                   -I../pjnath/include \
+                   -I../pjmedia/include \
+                   -I../pjlib-util/include \
+                   -I../pjlib/include \
+                   -I../third_party/ffmpeg/include \
+                   -I../third_party/SDL2/include \
+                   -c -o file.o file.cc",
+        "file": "../pjsip-apps/src/pjsua/main.c"
+  }
+]

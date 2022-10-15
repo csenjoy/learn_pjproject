@@ -1,8 +1,19 @@
 {
+	
 	"files": [
 		{
 			"path": "pjsip-apps/src/pjsua/main.c",
 			"bookmarks": [
+				{
+					"line": 29,
+					"column": 11,
+					"label": "on_app_started: Function Definition"
+				},
+				{
+					"line": 34,
+					"column": 14,
+					"label": "on_app_stopped: Function Definition"
+				},
 				{
 					"line": 41,
 					"column": 2,
@@ -38,6 +49,11 @@
 		{
 			"path": "pjsip-apps/src/pjsua/pjsua_app.h",
 			"bookmarks": [
+				{
+					"line": 33,
+					"column": 21,
+					"label": "struct pjsua_app_cfg_t: Struct Definition"
+				},
 				{
 					"line": 70,
 					"column": 0,
@@ -297,6 +313,16 @@
 					"line": 1139,
 					"column": 3,
 					"label": "pjsua_player_create: 2. 添加wav file player media port 到pjmedia_conf中"
+				},
+				{
+					"line": 1749,
+					"column": 27,
+					"label": "on_aud_prev_play_frame: Static Function Definition"
+				},
+				{
+					"line": 2007,
+					"column": 28,
+					"label": "pjsua_set_snd_dev: Function Definition"
 				}
 			]
 		},
@@ -512,6 +538,11 @@
 					"line": 33,
 					"column": 16,
 					"label": "struct pjsua_data: 定义pjsua_var"
+				},
+				{
+					"line": 372,
+					"column": 28,
+					"label": "pjsua_media_config_default: Function Definition"
 				},
 				{
 					"line": 758,
@@ -759,6 +790,21 @@
 			"path": "pjsip-apps/src/pjsua/pjsua_app_legacy.c",
 			"bookmarks": [
 				{
+					"line": 605,
+					"column": 20,
+					"label": "ui_make_new_call: Function Definition"
+				},
+				{
+					"line": 633,
+					"column": 2,
+					"label": "ui_make_new_call: 001.pjsua_msg_data_init(&msg_data)"
+				},
+				{
+					"line": 635,
+					"column": 2,
+					"label": "ui_make_new_call: 002.pjsua_call_make_call(current_aac, &tmp, call_opt, NULL, &msg_data, &current_call)"
+				},
+				{
 					"line": 1678,
 					"column": 4,
 					"label": "legacy_main: 函数定义"
@@ -792,6 +838,41 @@
 					"line": 55,
 					"column": 16,
 					"label": "struct pjsip_endpoint: 结构体声明"
+				},
+				{
+					"line": 427,
+					"column": 29,
+					"label": "pjsip_endpt_create: Function Definition"
+				},
+				{
+					"line": 470,
+					"column": 3,
+					"label": "pjsip_endpt_create: 001.init_sip_parser() called."
+				},
+				{
+					"line": 473,
+					"column": 26,
+					"label": "pjsip_endpt_create: 002.pjsip_tel_uri_subsys_init() called."
+				},
+				{
+					"line": 490,
+					"column": 1,
+					"label": "pjsip_endpt_create: 003.pj_timer_heap_create(endpt->pool, PJSIP_MAX_TIMER_COUNT, &endpt->timer_heap)"
+				},
+				{
+					"line": 508,
+					"column": 1,
+					"label": "pjsip_endpt_create: 004.pj_ioqueue_create(endpt->pool, PJSIP_MAX_TRANSPORTS, &endpt->ioqueue)"
+				},
+				{
+					"line": 514,
+					"column": 0,
+					"label": "pjsip_endpt_create: 005.pjsip_tpmgr_create(endpt->pool, endpt, &endpt_on_rx_msg, &endpt_on_tx_mag, &endpt->transport_mgr)"
+				},
+				{
+					"line": 523,
+					"column": 0,
+					"label": "pjsip_endpt_create: 006.pjsip_resolver_create(endpt->pool, &endpt->resolver)"
 				},
 				{
 					"line": 698,
@@ -5477,6 +5558,246 @@
 					"line": 225,
 					"column": 28,
 					"label": "pjmedia_rtp_session_update2: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjmedia/src/pjmedia-videodev/opengl_dev.c",
+			"bookmarks": [
+				{
+					"line": 133,
+					"column": 28,
+					"label": "static pjmedia_vid_dev_factory_op factory_op"
+				}
+			]
+		},
+		{
+			"path": "pjnath/src/pjnath/ice_strans.c",
+			"bookmarks": [
+				{
+					"line": 183,
+					"column": 14,
+					"label": "struct pj_ice_trans: Strcut Definition"
+				},
+				{
+					"line": 702,
+					"column": 26,
+					"label": "create_comp: Static Function Definition"
+				},
+				{
+					"line": 764,
+					"column": 32,
+					"label": "pj_ice_strans_create: Function Definition"
+				},
+				{
+					"line": 980,
+					"column": 23,
+					"label": "sess_init_update: Static Function Definition"
+				},
+				{
+					"line": 1079,
+					"column": 32,
+					"label": "pj_ice_strans_init_ice: Function Definition"
+				},
+				{
+					"line": 1103,
+					"column": 1,
+					"label": "pj_ice_strans_init_ice: .pj_ice_sess_create() called."
+				},
+				{
+					"line": 1457,
+					"column": 36,
+					"label": "pj_ice_strans_sendto: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjnath/include/pjnath/ice_session.h",
+			"bookmarks": [
+				{
+					"line": 180,
+					"column": 23,
+					"label": "struct pj_ice_sess_comp: Struct Definition"
+				},
+				{
+					"line": 613,
+					"column": 17,
+					"label": "struct pj_ice_sess: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjnath/include/pjnath/ice_strans.h",
+			"bookmarks": [
+				{
+					"line": 179,
+					"column": 34,
+					"label": "struct pj_ice_trans_stun_cfg: Struct Definition"
+				},
+				{
+					"line": 337,
+					"column": 25,
+					"label": "pj_ice_strans_cfg: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjnath/include/pjnath/stun_sock.h",
+			"bookmarks": [
+				{
+					"line": 218,
+					"column": 25,
+					"label": "struct pj_stun_sock_cfg: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjnath/include/pjnath/turn_sock.h",
+			"bookmarks": [
+				{
+					"line": 108,
+					"column": 23,
+					"label": "struct pj_turn_sock_cfg: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjnath/src/pjnath/ice_session.c",
+			"bookmarks": [
+				{
+					"line": 330,
+					"column": 30,
+					"label": "pj_ice_sess_create: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsip/sip_transport.c",
+			"bookmarks": [
+				{
+					"line": 1413,
+					"column": 30,
+					"label": "pjsip_tpmgr_create: Function Definition"
+				},
+				{
+					"line": 1425,
+					"column": 3,
+					"label": "pjsip_tpmgr_create: 001.pjsip_endpt_register_module(endpt, &mod_msg_print)"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsip/sip_resolve.c",
+			"bookmarks": [
+				{
+					"line": 71,
+					"column": 16,
+					"label": "struct pjsip_resolver_t: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsip/sip_transaction.c",
+			"bookmarks": [
+				{
+					"line": 431,
+					"column": 39,
+					"label": "pjsip_tsx_layer_init_module: Function Definition"
+				},
+				{
+					"line": 1768,
+					"column": 29,
+					"label": "pjsip_tsx_send_msg: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsua-lib/pjsua_call.c",
+			"bookmarks": [
+				{
+					"line": 400,
+					"column": 18,
+					"label": "on_make_call_med_tp_complete: Static Function Definition"
+				},
+				{
+					"line": 535,
+					"column": 22,
+					"label": "on_make_call_med_tp_complete: 001.pjsip_inv_send_msg(inv, tdata)"
+				},
+				{
+					"line": 760,
+					"column": 25,
+					"label": "pjsua_call_make_call: Function Definition"
+				},
+				{
+					"line": 797,
+					"column": 0,
+					"label": "pjsua_call_make_call: 001. pjsua_set_snd_dev(pjsua_var.cap_dev, pjsua_var.play_dev)"
+				},
+				{
+					"line": 820,
+					"column": 4,
+					"label": "pjsua_call_make_call: 002.reset_call(call_id)"
+				},
+				{
+					"line": 832,
+					"column": 1,
+					"label": "pjsua_call_make_call: 003.apply_call_setting(call, opt, NULL)"
+				},
+				{
+					"line": 873,
+					"column": 19,
+					"label": "pjsua_call_make_call: 004.pjsua_aac_create_uac_contact(tmp_pool, &contact, aac_id, dest_uri)"
+				},
+				{
+					"line": 883,
+					"column": 24,
+					"label": "pjsua_call_make_call: 005.pjsip_dlg_create_uac(...)"
+				},
+				{
+					"line": 924,
+					"column": 3,
+					"label": "pjsua_call_make_call: 006.pjsua_media_channel_init(call->index, PJSIP_ROLE_UAC, call->secure_level, dlg->pool, NULL, NULL, PJ_TRUE, on_make_call_med_tp_complete)"
+				},
+				{
+					"line": 930,
+					"column": 36,
+					"label": "pjsua_call_make_call: .on_make_call_med_tp_complete(call->index, NULL)"
+				},
+				{
+					"line": 3407,
+					"column": 18,
+					"label": "reinv_timer_cb: Static Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/include/pjsua-lib/pjsua.h",
+			"bookmarks": [
+				{
+					"line": 2141,
+					"column": 17,
+					"label": "struct pjsua_msg_data: Struct Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsip/sip_dialog.c",
+			"bookmarks": [
+				{
+					"line": 1213,
+					"column": 32,
+					"label": "pjsip_dlg_send_request: Function Definition"
+				}
+			]
+		},
+		{
+			"path": "pjsip/src/pjsip-ua/sip_inv.c",
+			"bookmarks": [
+				{
+					"line": 3183,
+					"column": 27,
+					"label": "pjsip_inv_send_msg: Function Definition"
 				}
 			]
 		}

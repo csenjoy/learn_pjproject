@@ -99,7 +99,7 @@ PJ_BEGIN_DECL
  * Default: 0 (or detected by configure)
  */
 #ifndef PJMEDIA_VIDEO_DEV_HAS_ANDROID_OPENGL
-#  define PJMEDIA_VIDEO_DEV_HAS_ANDROID_OPENGL	0
+#  define PJMEDIA_VIDEO_DEV_HAS_ANDROID_OPENGL	1
 #else
 #  if defined(PJMEDIA_VIDEO_DEV_HAS_ANDROID_OPENGL) && \
 	      PJMEDIA_VIDEO_DEV_HAS_ANDROID_OPENGL != 0
@@ -133,7 +133,7 @@ PJ_BEGIN_DECL
  * Default: 0 (or detected by configure)
  */
 #ifndef PJMEDIA_VIDEO_DEV_HAS_OPENGL
-#   define PJMEDIA_VIDEO_DEV_HAS_OPENGL		0
+#   define PJMEDIA_VIDEO_DEV_HAS_OPENGL		1
 #else
 #  if defined(PJMEDIA_VIDEO_DEV_HAS_OPENGL_ES) && \
 	      PJMEDIA_VIDEO_DEV_HAS_OPENGL_ES == 0
@@ -209,7 +209,7 @@ PJ_BEGIN_DECL
  * Default: 0 (unfinished)
  */
 #ifndef PJMEDIA_VIDEO_DEV_HAS_FFMPEG
-#   define PJMEDIA_VIDEO_DEV_HAS_FFMPEG	        0
+#   define PJMEDIA_VIDEO_DEV_HAS_FFMPEG	        1
 #endif
 
 

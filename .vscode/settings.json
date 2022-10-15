@@ -28,9 +28,11 @@
     "event.h": "c",
     "vid_tee.h": "c",
     "resamplesubs.h": "c",
-    "bidirectional.h": "c"
+    "bidirectional.h": "c",
+    "py_pjsua.h": "c"
   },
   "bookmarks.saveBookmarksInProject": true,
   "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
-  "svn.ignoreMissingSvnWarning": true
+  "svn.ignoreMissingSvnWarning": true,
+  "editor.tabSize": 8
 }
